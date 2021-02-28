@@ -16,8 +16,8 @@
         <div class="container">
             <div class="row">
                 <nav class="navbar navbar-expand-lg col-12  navbar-light bg-light">
-                    <router-link class="nav-item nav-link text-dark" to="/">Product</router-link>
-                    <router-link class="nav-item nav-link text-dark" to="/category">Category</router-link>
+                    <router-link class="nav-item nav-link" to="/Product">Product</router-link>
+                    <router-link class="nav-item nav-link" to="/category">Category</router-link>
                 </nav>
                 <router-view></router-view>
             </div>
@@ -28,6 +28,8 @@
     </div>
 
     <!-- script -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
     <script src="{!! mix('js/app.js') !!}" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"></script>
 </body>

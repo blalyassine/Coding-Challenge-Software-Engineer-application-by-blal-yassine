@@ -13,9 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Route::get('/{any}', 'App\Http\Controllers\AppController@index')->where('any', '^(?!storage).*$');
+
+
 Route::get('/', function () {
     return view('home');
 });
+Route::get('/product', 'ProductController@index')->name('product');
+Route::get('/catogory', 'CategoryController@index')->name('catogory');
 
 Auth::routes();
 
