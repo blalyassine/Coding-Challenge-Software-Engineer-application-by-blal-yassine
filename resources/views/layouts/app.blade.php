@@ -21,8 +21,13 @@
                 </nav>
                 <router-view></router-view>
             </div>
+            <main class="py-4">
+                @yield('content')
+            </main>
         </div>
     </div>
+
+    <!-- script -->
     <script src="{!! mix('js/app.js') !!}" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"></script>
 </body>
